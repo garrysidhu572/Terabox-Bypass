@@ -46,7 +46,7 @@ async def format_message(link_data):
 async def link_handler(client, message):
     if message.chat.type.value != "private" and str(message.chat.id) not in allowed_groups:
         await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
-        await message.reply_text("⚠️ Forbidden! For groups access.\nContact @DTMK_C", quote=True)
+        await message.reply_text("⚠️ Forbidden! For groups access.\nContact @PUNJAB_BUY", quote=True)
         return
     else:
         start_time = time.time()
