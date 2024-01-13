@@ -12,13 +12,13 @@ logging.basicConfig(level=logging.INFO)
 async def start(client, message):
     if message.chat.type.value != "private" and str(message.chat.id) not in allowed_groups:
         await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
-        await message.reply_text("⚠️ Forbidden!\nFor groups access.\nContact @DTMK_C", quote=True)
+        await message.reply_text("⚠️ Forbidden!\nFor groups access.\nContact @Punjab_Buy", quote=True)
         return
     else:
         await client.send_chat_action(message.chat.id, enums.ChatAction.TYPING)
         await message.reply_text(
             "Hello! I'm Terabox link Bypass Bot. Send me a link to bypass.\n"
-            "Owner: @DTMK_C\n"
+            "Owner: @TERABOXSUPPORT01 \n"
             "Eg:- `https://teraboxapp.com/s/1Ykohv-bhT4SJJEgyDMeS-A`", quote=True)
 
 
